@@ -157,7 +157,7 @@ permitindo testes completos sem necessidade do hardware físico.
 
 Autor
 
-Leonardo Camargo
+João Camargo
 
 Projeto desenvolvido para estudo e demonstração de competências em:
 
