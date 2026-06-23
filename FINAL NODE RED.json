@@ -1,0 +1,556 @@
+[
+    {
+        "id": "aeec8e7c10afdb5c",
+        "type": "tab",
+        "label": "Fluxo 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8a25a0acf9016a45",
+        "type": "tab",
+        "label": "Fluxo 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "218c01da2b408433",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d0a084ea44e5abd6",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#006f75",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#006f75",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#006f75",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#00b8c1",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#006f75",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial,Arial,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "86db1c192db226d5",
+        "type": "ui_group",
+        "name": "Sensores",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "62998149b23839af",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "@flowfuse/node-red-dashboard": "1.30.2",
+            "node-red-contrib-telegrambot": "17.4.16"
+        }
+    },
+    {
+        "id": "18af6650f2b14f4d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6badcb4ebb716ee7",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "8c4813339df34d4d",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#050505",
+            "primary": "#ef4444",
+            "bgPage": "#050505",
+            "groupBg": "#111111",
+            "groupOutline": "#2a2a2a"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "20px",
+            "groupGap": "20px",
+            "groupBorderRadius": "12px",
+            "widgetGap": "16px"
+        }
+    },
+    {
+        "id": "7869340eb5dd40ce",
+        "type": "ui-page",
+        "name": "DC Watch IoT",
+        "ui": "6badcb4ebb716ee7",
+        "path": "/dcwatch",
+        "icon": "monitoring",
+        "layout": "grid",
+        "theme": "8c4813339df34d4d",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "12"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "12"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "a277c203cbbc8071",
+        "type": "ui-group",
+        "name": "Status Geral",
+        "page": "7869340eb5dd40ce",
+        "width": "12",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "12cd0ceafb65ed91",
+        "type": "ui-theme",
+        "name": "ui-base.label.theme 2",
+        "colors": {
+            "surface": "#050505",
+            "primary": "#ef4444",
+            "bgPage": "#050505",
+            "groupBg": "#111111",
+            "groupOutline": "#2a2a2a"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "20px",
+            "groupGap": "20px",
+            "groupBorderRadius": "12px",
+            "widgetGap": "16px"
+        }
+    },
+    {
+        "id": "a96d86a1115546f7",
+        "type": "ui-page",
+        "name": "Histórico",
+        "ui": "6badcb4ebb716ee7",
+        "path": "/historico",
+        "icon": "query_stats",
+        "layout": "grid",
+        "theme": "8c4813339df34d4d",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "c97143bfb4d664e3",
+        "type": "telegram bot",
+        "botname": "CPB12_BOT",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "pollinterval": 300,
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": 6667,
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbothost": "0.0.0.0",
+        "localbotport": 8443,
+        "publicbotport": 8443,
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "2ef5dd0b31a6cfc7",
+        "type": "mqtt in",
+        "z": "8a25a0acf9016a45",
+        "name": "",
+        "topic": "dcwatch/rack01/telemetry",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "18af6650f2b14f4d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 530,
+        "y": 480,
+        "wires": [
+            [
+                "f4ef3347c864017b"
+            ]
+        ]
+    },
+    {
+        "id": "f4ef3347c864017b",
+        "type": "json",
+        "z": "8a25a0acf9016a45",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 730,
+        "y": 480,
+        "wires": [
+            [
+                "7df73c5b7058b98d",
+                "e3b499dc48d2e387"
+            ]
+        ]
+    },
+    {
+        "id": "7df73c5b7058b98d",
+        "type": "function",
+        "z": "8a25a0acf9016a45",
+        "name": "function 1 - Painel Principal",
+        "func": "let d = msg.payload;\n\nif (typeof d === 'string') {\n    d = JSON.parse(d);\n}\n\nmsg.payload = {\n    status: d.status || 'NORMAL',\n    tempAmb: Number(d.tempAmb),\n    humidity: Number(d.humidity),\n    tempRack: Number(d.tempRack),\n    smoke: Number(d.smoke),\n    power: Number(d.power),\n    light: Number(d.light),\n    porta: d.doorOpen ? 'ABERTA' : 'FECHADA',\n    energia: d.energyFail ? 'FALHA' : 'OK',\n    movimento: d.motion ? 'DETECTADO' : 'NORMAL',\n    ventilacao: d.fanOn ? 'LIGADA' : 'DESLIGADA',\n    wifiRssi: d.wifiRssi || 0\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 420,
+        "wires": [
+            [
+                "6e0cff40226cee41",
+                "9e9b443ec7a4b840"
+            ]
+        ]
+    },
+    {
+        "id": "e3b499dc48d2e387",
+        "type": "function",
+        "z": "8a25a0acf9016a45",
+        "name": "function - Histórico",
+        "func": "let d = msg.payload;\n\nif (typeof d === 'string') {\n    d = JSON.parse(d);\n}\n\n// Passa payload RAW para o histórico (nomes originais do MQTT)\nmsg.payload = {\n    status: d.status || 'NORMAL',\n    tempAmb: Number(d.tempAmb),\n    humidity: Number(d.humidity),\n    tempRack: Number(d.tempRack),\n    smoke: Number(d.smoke),\n    power: Number(d.power),\n    light: Number(d.light),\n    doorOpen: d.doorOpen || false,\n    energyFail: d.energyFail || false,\n    motion: d.motion || false,\n    fanOn: d.fanOn || false\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 540,
+        "wires": [
+            [
+                "c596a5d179238f91"
+            ]
+        ]
+    },
+    {
+        "id": "3e84f6656537bb5a",
+        "type": "ui-template",
+        "z": "8a25a0acf9016a45",
+        "group": "a277c203cbbc8071",
+        "page": "",
+        "ui": "",
+        "name": "CSS DC Watch",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\nbody, .v-application {\n  background: #050505 !important;\n  color: #F8FAFC !important;\n}\n.v-toolbar, .nrdb-header {\n  background: #050505 !important;\n  border-bottom: 1px solid #2A2A2A !important;\n}\n.nrdb-ui-group {\n  background: linear-gradient(145deg, #111111, #080808) !important;\n  border: 1px solid #2A2A2A !important;\n  border-radius: 16px !important;\n  box-shadow: 0 0 18px rgba(239, 68, 68, 0.10) !important;\n}\n.nrdb-ui-group-title {\n  color: #F8FAFC !important;\n  font-weight: 700 !important;\n}\n.nrdb-ui-widget { color: #F8FAFC !important; }\n.nrdb-ui-text {\n  background: rgba(17, 17, 17, 0.95) !important;\n  border-left: 4px solid #EF4444 !important;\n  border-radius: 12px !important;\n  padding: 10px 14px !important;\n}\n.dc-card {\n  background: linear-gradient(135deg, #111111, #080808);\n  border: 1px solid #2A2A2A;\n  border-radius: 16px;\n  padding: 18px 24px;\n  color: #F8FAFC;\n}\n.dc-accent { color: #EF4444; }\n.dc-online { color: #22C55E; font-weight: 800; }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 920,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6e0cff40226cee41",
+        "type": "ui-template",
+        "z": "8a25a0acf9016a45",
+        "group": "a277c203cbbc8071",
+        "page": "",
+        "ui": "",
+        "name": "Painel DC Watch",
+        "order": 2,
+        "width": "12",
+        "height": "14",
+        "head": "",
+        "format": "<template>\n  <div class=\"dc-page\">\n    <div class=\"dc-hero\">\n      <div>\n        <h1><span>DC</span> Watch IoT</h1>\n        <p>Data Center Monitoring Platform • Rack 01</p>\n      </div>\n      <div class=\"online\">● MQTT ONLINE</div>\n    </div>\n\n    <div class=\"status-card\" :class=\"msg.payload.status.toLowerCase()\">\n      <div>Status Geral</div>\n      <strong>{{ msg.payload.status }}</strong>\n    </div>\n\n    <div class=\"grid\">\n      <div class=\"card\"><span>🌡️ Temp Ambiente</span><strong>{{ msg.payload.tempAmb }} °C</strong></div>\n      <div class=\"card\"><span>💧 Umidade</span><strong>{{ msg.payload.humidity }} %</strong></div>\n      <div class=\"card\"><span>🌡️ Temp Rack</span><strong>{{ msg.payload.tempRack }} °C</strong></div>\n      <div class=\"card\"><span>🔥 Fumaça</span><strong>{{ msg.payload.smoke }} %</strong></div>\n      <div class=\"card\"><span>⚡ Consumo</span><strong>{{ msg.payload.power }} %</strong></div>\n      <div class=\"card\"><span>☀️ Luminosidade</span><strong>{{ msg.payload.light }} %</strong></div>\n    </div>\n\n    <div class=\"infra\">\n      <div>🚪 Porta <strong>{{ msg.payload.porta }}</strong></div>\n      <div>⚡ Energia <strong>{{ msg.payload.energia }}</strong></div>\n      <div>👤 Movimento <strong>{{ msg.payload.movimento }}</strong></div>\n      <div>🌀 Ventilação <strong>{{ msg.payload.ventilacao }}</strong></div>\n    </div>\n  </div>\n</template>\n\n<style>\n.dc-page {\n  background:#050505;\n  color:#f8fafc;\n  font-family: Arial, sans-serif;\n  padding: 16px;\n}\n.dc-hero {\n  display:flex;\n  justify-content:space-between;\n  align-items:center;\n  background:linear-gradient(135deg,#111,#060606);\n  border:1px solid #2a2a2a;\n  border-radius:18px;\n  padding:22px;\n  margin-bottom:18px;\n}\n.dc-hero h1 { margin:0; font-size:32px; }\n.dc-hero h1 span { color:#ef4444; }\n.dc-hero p { color:#a1a1aa; margin:6px 0 0; }\n.online { color:#22c55e; font-weight:800; }\n.status-card {\n  border-radius:18px;\n  padding:22px;\n  margin-bottom:18px;\n  background:#111;\n  border-left:8px solid #22c55e;\n  display:flex;\n  justify-content:space-between;\n  align-items:center;\n  font-size:18px;\n}\n.status-card strong { font-size:28px; }\n.status-card.atencao { border-left-color:#facc15; }\n.status-card.critico { border-left-color:#ef4444; animation:pulse 1s infinite alternate; }\n.grid {\n  display:grid;\n  grid-template-columns:repeat(3,1fr);\n  gap:18px;\n  margin-bottom:18px;\n}\n.card {\n  background:linear-gradient(145deg,#111,#080808);\n  border:1px solid #2a2a2a;\n  border-radius:18px;\n  padding:24px;\n  box-shadow:0 0 18px rgba(239,68,68,.12);\n}\n.card span { color:#a1a1aa; font-size:15px; }\n.card strong { display:block; margin-top:12px; font-size:34px; }\n.infra {\n  display:grid;\n  grid-template-columns:repeat(4,1fr);\n  gap:18px;\n}\n.infra div {\n  background:#111;\n  border:1px solid #2a2a2a;\n  border-left:5px solid #ef4444;\n  border-radius:16px;\n  padding:18px;\n}\n.infra strong { display:block; margin-top:10px; font-size:20px; }\n@keyframes pulse {\n  from { box-shadow:0 0 10px rgba(239,68,68,.25); }\n  to { box-shadow:0 0 28px rgba(239,68,68,.75); }\n}\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1190,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c596a5d179238f91",
+        "type": "ui-template",
+        "z": "8a25a0acf9016a45",
+        "group": "",
+        "page": "a96d86a1115546f7",
+        "ui": "",
+        "name": "Painel Histórico",
+        "order": 1,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"hw\">\n    <div class=\"hh\">\n      <h2>📊 Histórico DC Watch</h2>\n      <span style=\"color:#22c55e;font-size:13px;\">● {{ live }}</span>\n    </div>\n\n    <div class=\"hg\">\n      <div class=\"hc\" v-for=\"s in series\" :key=\"s.key\">\n        <div class=\"hct\">\n          <span>{{ s.icon }} {{ s.label }}</span>\n          <b :style=\"{color:s.color}\">{{ ultimo(s.key) }}{{ s.unit }}</b>\n        </div>\n        <svg viewBox=\"0 0 400 80\" style=\"width:100%;height:80px\" preserveAspectRatio=\"none\">\n          <defs>\n            <linearGradient :id=\"'g'+s.key\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n              <stop offset=\"0%\" :stop-color=\"s.color\" stop-opacity=\"0.35\"/>\n              <stop offset=\"100%\" :stop-color=\"s.color\" stop-opacity=\"0\"/>\n            </linearGradient>\n          </defs>\n          <path :d=\"area(s.key)\" :fill=\"'url(#g'+s.key+')'\"/>\n          <polyline :points=\"linha(s.key)\" :stroke=\"s.color\" stroke-width=\"2.5\" fill=\"none\"/>\n        </svg>\n      </div>\n    </div>\n\n    <div class=\"ht\">\n      <h4>📋 Últimos Registros</h4>\n      <table>\n        <thead><tr>\n          <th>Horário</th><th>Status</th><th>Temp Amb</th>\n          <th>Temp Rack</th><th>Umidade</th><th>Fumaça</th><th>Consumo</th>\n        </tr></thead>\n        <tbody>\n          <tr v-for=\"(r,i) in tabela\" :key=\"i\">\n            <td class=\"c6\">{{ r.hora }}</td>\n            <td :class=\"r.status==='NORMAL'?'ok':'er'\">{{ r.status }}</td>\n            <td>{{ r.tempAmb }}°C</td>\n            <td>{{ r.tempRack }}°C</td>\n            <td>{{ r.humidity }}%</td>\n            <td>{{ r.smoke }}%</td>\n            <td>{{ r.power }}%</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      live: 'AGUARDANDO',\n      hist: [],\n      series: [\n        {key:'tempAmb', label:'Temp Ambiente', icon:'🌡️', color:'#ff4d4d', unit:'°C'},\n        {key:'tempRack',label:'Temp Rack',     icon:'🌡️', color:'#ff8c00', unit:'°C'},\n        {key:'humidity',label:'Umidade',        icon:'💧', color:'#00bcd4', unit:'%'},\n        {key:'power',   label:'Consumo',        icon:'⚡', color:'#4caf50', unit:'%'}\n      ]\n    }\n  },\n  computed: {\n    tabela() { return [...this.hist].reverse().slice(0,15) }\n  },\n  watch: {\n    msg: {\n      handler(m) { if(m&&m.payload) this.add(m.payload) },\n      deep: true\n    }\n  },\n  methods: {\n    add(d) {\n      this.hist.push({hora: new Date().toLocaleTimeString('pt-BR'), ...d})\n      if(this.hist.length>60) this.hist.shift()\n      this.live = 'LIVE ' + new Date().toLocaleTimeString('pt-BR')\n    },\n    vals(key) { return this.hist.map(h=>parseFloat(h[key])||0) },\n    ultimo(key) { const v=this.vals(key); return v.length?v[v.length-1]:'--' },\n    linha(key) {\n      const v=this.vals(key); if(v.length<2) return ''\n      const mn=Math.min(...v)-1, mx=Math.max(...v)+1\n      return v.map((n,i)=>((i/(v.length-1))*400)+','+(80-((n-mn)/(mx-mn))*80)).join(' ')\n    },\n    area(key) {\n      const v=this.vals(key); if(v.length<2) return ''\n      const mn=Math.min(...v)-1, mx=Math.max(...v)+1\n      const pts=v.map((n,i)=>((i/(v.length-1))*400)+','+(80-((n-mn)/(mx-mn))*80))\n      return 'M0,80 L'+pts.join(' L')+' L400,80 Z'\n    }\n  }\n}\n</script>\n\n<style>\n.hw{background:#050505;min-height:100vh;padding:24px 28px;color:#f8fafc;font-family:Arial,sans-serif;box-sizing:border-box}\n.hh{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}\n.hh h2{margin:0;font-size:22px;color:#ef4444}\n.hg{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}\n.hc{background:#111;border:1px solid #2a2a2a;border-radius:14px;padding:16px}\n.hct{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:13px;color:#a1a1aa}\n.hct b{font-size:22px}\n.ht{background:#111;border:1px solid #2a2a2a;border-radius:14px;padding:16px}\n.ht h4{margin:0 0 14px;color:#a1a1aa;font-size:14px}\ntable{width:100%;border-collapse:collapse;font-size:13px}\nth{color:#ef4444;text-align:left;padding:8px 10px;border-bottom:1px solid #2a2a2a}\ntd{padding:7px 10px;border-bottom:1px solid #1a1a1a;color:#d4d4d4}\n.c6{color:#666}.ok{color:#22c55e;font-weight:700}.er{color:#ef4444;font-weight:700}\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "widget:page",
+        "className": "",
+        "x": 1160,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90a7ca6a533a840c",
+        "type": "telegram sender",
+        "z": "8a25a0acf9016a45",
+        "name": "",
+        "bot": "c97143bfb4d664e3",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1390,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9e9b443ec7a4b840",
+        "type": "function",
+        "z": "8a25a0acf9016a45",
+        "name": "Alerta Telegram",
+        "func": "let d = msg.payload;\n\nlet alertas = [];\n\nif (d.tempAmb > 30)\n    alertas.push(`🌡 Temperatura Ambiente Alta: ${d.tempAmb}°C`);\n\nif (d.tempRack > 35)\n    alertas.push(`🔥 Temperatura Rack Alta: ${d.tempRack}°C`);\n\nif (d.smoke > 60)\n    alertas.push(`💨 Fumaça Detectada: ${d.smoke}%`);\n\nif (d.motion)\n    alertas.push(`🚶 Movimento Detectado`);\n\nif (d.doorOpen)\n    alertas.push(`🚪 Porta Aberta`);\n\nif (d.energyFail)\n    alertas.push(`⚡ Falha de Energia`);\n\nif (alertas.length === 0)\n    return null;\n\nmsg.payload = {\n    chatId: 5383801368,\n    type: \"message\",\n    content:\n`🚨 ALERTA DC WATCH\n\nRack: rack01\n\n${alertas.join('\\n')}\n\n🕒 ${new Date().toLocaleString('pt-BR')}`\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 460,
+        "wires": [
+            [
+                "90a7ca6a533a840c"
+            ]
+        ]
+    }
+]
